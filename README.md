@@ -75,10 +75,6 @@ Prim::disableErrorLog();
 
 ### Methods
 ```php
-Prim::getAccounts(PrimRequestInterface $request): array
-Prim::setAddresses(PrimRequestInterface $request): array
-Prim::getExpenseAllocations(PrimRequestInterface $request): array
-
 //list all API methods and params
 Prim::getAllMethods(): array
 
@@ -88,41 +84,44 @@ Prim::getMethodParams($method, $verb): array
 //auto generate validation rules for API method
 Prim::getValidationRules($method, $verb): array
 
-Prim::getAvailabilities(PrimRequestInterface $request): array
-Prim::getAvailabilitiesByLabels(PrimRequestInterface $request): array
-Prim::getBlanks(PrimRequestInterface $request): array
-Prim::getBonusPoints(PrimRequestInterface $request): array
-Prim::setBrands(PrimRequestInterface $request): array
-Prim::getClientTypes(PrimRequestInterface $request): array
-Prim::setContacts(PrimRequestInterface $request): array
-Prim::getCurrencies(PrimRequestInterface $request): array
-Prim::getDeliveryTypes(PrimRequestInterface $request): array
-Prim::getDocInfo(PrimRequestInterface $request): array
-Prim::getFiles(PrimRequestInterface $request): array
-Prim::annulFinDocFinDoc(PrimRequestInterface $request): array
-Prim::setGroups(PrimRequestInterface $request): array
-Prim::getInterationSystems(PrimRequestInterface $request): array
-Prim::setInvoice(PrimRequestInterface $request): array
-Prim::setItems(PrimRequestInterface $request): array
-Prim::getListOperation(PrimRequestInterface $request): array
-Prim::setMeasures(PrimRequestInterface $request): array
-Prim::getOperations(PrimRequestInterface $request): array
-Prim::getParams(PrimRequestInterface $request): array
-Prim::setPartners(PrimRequestInterface $request): array
-Prim::getPayTypes(PrimRequestInterface $request): array
-Prim::fullAnnulPoPo(PrimRequestInterface $request): array
-Prim::getPos(PrimRequestInterface $request): array
-Prim::setPrices(PrimRequestInterface $request): array
-Prim::getPricesLists(PrimRequestInterface $request): array
-Prim::setServices(PrimRequestInterface $request): array
-Prim::getSoInvoicePdfSo(PrimRequestInterface $request): array
-Prim::getSoOrderTypes(PrimRequestInterface $request): array
-Prim::deleteStoreIn(PrimRequestInterface $request): array
-Prim::deleteStoreOut(PrimRequestInterface $request): array
-Prim::getStores(PrimRequestInterface $request): array
-Prim::getTaxDeals(PrimRequestInterface $request): array
-Prim::getTaxInstances(PrimRequestInterface $request): array
-Prim::getVendorTypes(PrimRequestInterface $request): array
+Prim::getAccounts(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Accounts.get
+Prim::setAddresses(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Addresses.set
+Prim::getExpenseAllocations(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Allocations.getExpense
+Prim::getAvailabilities(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Availabilities.get
+Prim::getAvailabilitiesByLabels(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.AvailabilitiesByLabels.get
+Prim::getBlanks(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Blanks.get
+Prim::getBonusPoints(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.BonusPoints.get
+Prim::setBrands(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Brands.set
+Prim::getClientTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.ClientTypes.get
+Prim::setContacts(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Contacts.set
+Prim::getCurrencies(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Currencies.get
+Prim::getDeliveryTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.DeliveryTypes.get
+Prim::getDocInfo(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.DocInfo.get
+Prim::getFiles(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Files.get
+Prim::annulFinDocFinDoc(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.FinDoc.annulFinDoc
+Prim::setGroups(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Groups.set
+Prim::getInterationSystems(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.InterationSystems.get
+Prim::setInvoice(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Invoice.set
+Prim::setItems(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Items.set
+Prim::getListOperation(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.ListOperation.get
+Prim::setMeasures(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Measures.set
+Prim::getOperations(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Operations.get
+Prim::getParams(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Params.get
+Prim::setPartners(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Partners.set
+Prim::getPayTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.PayTypes.get
+Prim::fullAnnulPoPo(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Po.fullAnnulPo
+Prim::getPos(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Pos.get
+Prim::setPrices(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Prices.set
+Prim::getPricesLists(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.PricesLists.get
+Prim::setServices(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Services.set
+Prim::getSoInvoicePdfSo(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.So.getSoInvoicePdf
+Prim::getSoOrderTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.SoOrderTypes.get
+Prim::deleteStoreIn(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.StoreIn.delete
+Prim::deleteStoreOut(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.StoreOut.delete
+Prim::getStores(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Stores.get
+Prim::getTaxDeals(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.TaxDeals.get
+Prim::getTaxInstances(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.TaxInstances.get
+Prim::getVendorTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.VendorTypes.get
 ```
 
 ### Commands
