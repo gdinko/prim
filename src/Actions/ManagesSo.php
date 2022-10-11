@@ -11,7 +11,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function getSo(PrimRequestInterface $request)
@@ -27,7 +27,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function getOneDataSo(PrimRequestInterface $request)
@@ -43,7 +43,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function setSo(PrimRequestInterface $request)
@@ -59,7 +59,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function createExpeditionSo(PrimRequestInterface $request)
@@ -75,7 +75,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function createStoreOutSo(PrimRequestInterface $request)
@@ -91,7 +91,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function createCreditSo(PrimRequestInterface $request)
@@ -107,7 +107,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function createFinDocSo(PrimRequestInterface $request)
@@ -123,7 +123,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function annulSoSo(PrimRequestInterface $request)
@@ -139,7 +139,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function fullAnnulSoSo(PrimRequestInterface $request)
@@ -155,7 +155,7 @@ trait ManagesSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function getSoInvoicePdfSo(PrimRequestInterface $request)

@@ -11,7 +11,7 @@ trait ManagesPo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function getPo(PrimRequestInterface $request)
@@ -27,7 +27,7 @@ trait ManagesPo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function getOneDataPo(PrimRequestInterface $request)
@@ -43,7 +43,7 @@ trait ManagesPo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function setPo(PrimRequestInterface $request)
@@ -59,7 +59,7 @@ trait ManagesPo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function createDeliveryPo(PrimRequestInterface $request)
@@ -75,7 +75,7 @@ trait ManagesPo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function createStoreInPo(PrimRequestInterface $request)
@@ -91,7 +91,7 @@ trait ManagesPo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function createFinDocPo(PrimRequestInterface $request)
@@ -107,7 +107,7 @@ trait ManagesPo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function annulPoPo(PrimRequestInterface $request)
@@ -123,7 +123,7 @@ trait ManagesPo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function fullAnnulPoPo(PrimRequestInterface $request)

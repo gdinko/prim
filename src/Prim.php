@@ -69,14 +69,14 @@ class Prim
     /**
      * requestLog
      *
-     * @var boolean
+     * @var bool
      */
     protected $requestLog;
 
     /**
      * errorLog
      *
-     * @var boolean
+     * @var bool
      */
     protected $errorLog;
 

@@ -2,8 +2,8 @@
 
 namespace Gdinko\Prim\Commands;
 
-use Gdinko\Prim\Models\PrimApiStatus;
 use Gdinko\Prim\Facades\Prim;
+use Gdinko\Prim\Models\PrimApiStatus;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 
@@ -56,7 +56,7 @@ class PrimApiStatusCommand extends Command
 
             $methods = Prim::getAllMethods();
 
-            if (!empty($methods)) {
+            if (! empty($methods)) {
                 PrimApiStatus::create([
                     'code' => self::API_STATUS_OK,
                 ]);

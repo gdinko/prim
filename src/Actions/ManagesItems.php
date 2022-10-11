@@ -11,7 +11,7 @@ trait ManagesItems
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function getItems(PrimRequestInterface $request)
@@ -27,7 +27,7 @@ trait ManagesItems
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function setItems(PrimRequestInterface $request)

@@ -11,7 +11,7 @@ trait ManagesAccounts
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function getAccounts(PrimRequestInterface $request)

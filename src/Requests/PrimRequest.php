@@ -26,7 +26,7 @@ class PrimRequest implements PrimRequestInterface
      * __construct
      *
      * @param  array $data
-     * @param  boolean $getAll
+     * @param  bool $getAll
      * @param  array $validationRules
      * @return void
      */
@@ -49,9 +49,9 @@ class PrimRequest implements PrimRequestInterface
 
         $this->validatedData = [
             'data' => [
-                $validator->validated() ?: new \stdClass()
+                $validator->validated() ?: new \stdClass(),
             ],
-            'get_all' => $getAll
+            'get_all' => $getAll,
         ];
     }
 
@@ -62,7 +62,7 @@ class PrimRequest implements PrimRequestInterface
      */
     public function getValidationRules(): array
     {
-        if (!empty($this->validationRules)) {
+        if (! empty($this->validationRules)) {
             return $this->validationRules;
         }
 

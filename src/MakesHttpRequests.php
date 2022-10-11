@@ -71,9 +71,7 @@ trait MakesHttpRequests
         //check if request is successful and has valid data => status = ok
         //prim always returns status 200
         if ($response->successful()) {
-
             if ($responseData['status'] === 'ok') {
-
                 //save request log to database if logging is enabled
                 if ($this->requestLog) {
                     $log['status'] = $response->status();
@@ -101,7 +99,6 @@ trait MakesHttpRequests
 
         //request failed prepare and throw exception
         if ($response->failed()) {
-
             //convert reponse to exception
             $e = $response->toException();
 

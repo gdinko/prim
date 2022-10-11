@@ -5,13 +5,13 @@ namespace Gdinko\Prim\Actions;
 use Gdinko\Prim\Interfaces\PrimRequestInterface;
 
 trait ManagesAddresses
-{    
+{
     /**
      * getAddresses
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function getAddresses(PrimRequestInterface $request)
@@ -21,13 +21,13 @@ trait ManagesAddresses
             $request->getValidatedData()
         )['result'];
     }
-    
+
     /**
      * setAddresses
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function setAddresses(PrimRequestInterface $request)

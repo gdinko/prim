@@ -8,7 +8,7 @@ trait ManagesApiCommon
      * getAllMethods
      *
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      */
     public function getAllMethods(): array
@@ -24,7 +24,7 @@ trait ManagesApiCommon
      * @param  string $method
      * @param  string $verb
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Illuminate\Support\ItemNotFoundException
      */
@@ -49,7 +49,7 @@ trait ManagesApiCommon
      * @param  string $method
      * @param  string $verb
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Illuminate\Support\ItemNotFoundException
      */
@@ -60,7 +60,6 @@ trait ManagesApiCommon
         collect(
             $this->getMethodParams($method, $verb)
         )->each(function ($item) use (&$rules) {
-
             $rule = [];
 
             if ($item['required']) {
@@ -73,12 +72,15 @@ trait ManagesApiCommon
             switch ($item['type']) {
                 case 'date':
                     $rule[] = 'date';
+
                     break;
                 case 'checkbox':
                     $rule[] = 'booolean';
+
                     break;
                 default:
                     $rule[] = 'string';
+
                     break;
             }
 
