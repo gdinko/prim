@@ -112,7 +112,6 @@ class Prim
     /**
      * getApiToken
      *
-     * @param  string $apiToken
      * @return string
      */
     public function getApiToken(): string
