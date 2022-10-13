@@ -12,7 +12,7 @@ Route::name('prim.')
             ->post('/prim/hook', function (Request $request) {
 
                 $status = 200;
-                $payload = $request->all()['payload'] ?? json_encode([]);
+                $payload = $request->all()['payload'] ?? [];
 
                 if (empty($payload)) {
                     $status = 404;
