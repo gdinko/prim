@@ -18,6 +18,7 @@ Route::name('prim.')
                     $status = 404;
                 }
 
+                //fire prim hook event
                 PrimHookEvent::dispatch($payload);
 
                 return response()->json(
