@@ -18,7 +18,6 @@ class PrimNoValidationRequest implements PrimRequestInterface
      *
      * @param  array $data
      * @param  bool $getAll
-     * @param  array $validationRules
      * @return void
      */
     public function __construct(array $data = [], $getAll = false)
