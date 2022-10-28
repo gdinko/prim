@@ -10,15 +10,21 @@ trait ManagesBlanks
      * getBlanks
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+     * @param  boolean $wantAll
      * @return array
-     *
+     * 
      * @throws \Gdinko\Prim\Exceptions\PrimException
+     * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-    public function getBlanks(PrimRequestInterface $request)
+
+    public function getBlanks(PrimRequestInterface $request, $wantAll = false)
     {
-        return $this->post(
+        $response = $this->post(
             "RPC.common.Api.Blanks.get",
-            $request->getValidatedData()
-        )['result'];
+            $request->getValidatedData(),
+            $wantAll
+        );
+
+        return $wantAll ? $response : $response['result'] ?? [];
     }
 }

@@ -10,15 +10,21 @@ trait ManagesTaxDeals
      * getTaxDeals
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+     * @param  boolean $wantAll
      * @return array
-     *
+     * 
      * @throws \Gdinko\Prim\Exceptions\PrimException
+     * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-    public function getTaxDeals(PrimRequestInterface $request)
+
+    public function getTaxDeals(PrimRequestInterface $request, $wantAll = false)
     {
-        return $this->post(
+        $response = $this->post(
             "RPC.common.Api.TaxDeals.get",
-            $request->getValidatedData()
-        )['result'];
+            $request->getValidatedData(),
+            $wantAll
+        );
+
+        return $wantAll ? $response : $response['result'] ?? [];
     }
 }

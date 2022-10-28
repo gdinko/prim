@@ -10,15 +10,21 @@ trait ManagesCurrencies
      * getCurrencies
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+     * @param  boolean $wantAll
      * @return array
-     *
+     * 
      * @throws \Gdinko\Prim\Exceptions\PrimException
+     * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-    public function getCurrencies(PrimRequestInterface $request)
+
+    public function getCurrencies(PrimRequestInterface $request, $wantAll = false)
     {
-        return $this->post(
+        $response = $this->post(
             "RPC.common.Api.Currencies.get",
-            $request->getValidatedData()
-        )['result'];
+            $request->getValidatedData(),
+            $wantAll
+        );
+
+        return $wantAll ? $response : $response['result'] ?? [];
     }
 }

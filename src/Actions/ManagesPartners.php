@@ -6,35 +6,48 @@ use Gdinko\Prim\Interfaces\PrimRequestInterface;
 
 trait ManagesPartners
 {
+
     /**
      * getPartners
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+     * @param  boolean $wantAll
      * @return array
-     *
+     * 
      * @throws \Gdinko\Prim\Exceptions\PrimException
+     * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-    public function getPartners(PrimRequestInterface $request)
+
+    public function getPartners(PrimRequestInterface $request, $wantAll = false)
     {
-        return $this->post(
+        $response = $this->post(
             "RPC.common.Api.Partners.get",
-            $request->getValidatedData()
-        )['result'];
+            $request->getValidatedData(),
+            $wantAll
+        );
+
+        return $wantAll ? $response : $response['result'] ?? [];
     }
 
     /**
      * setPartners
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+     * @param  boolean $wantAll
      * @return array
-     *
+     * 
      * @throws \Gdinko\Prim\Exceptions\PrimException
+     * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-    public function setPartners(PrimRequestInterface $request)
+
+    public function setPartners(PrimRequestInterface $request, $wantAll = false)
     {
-        return $this->post(
+        $response = $this->post(
             "RPC.common.Api.Partners.set",
-            $request->getValidatedData()
-        )['result'];
+            $request->getValidatedData(),
+            $wantAll
+        );
+
+        return $wantAll ? $response : $response['result'] ?? [];
     }
 }

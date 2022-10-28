@@ -84,44 +84,576 @@ Prim::getMethodParams($method, $verb): array
 //auto generate validation rules for API method
 Prim::getValidationRules($method, $verb): array
 
-Prim::getAccounts(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Accounts.get
-Prim::setAddresses(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Addresses.set
-Prim::getExpenseAllocations(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Allocations.getExpense
-Prim::getAvailabilities(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Availabilities.get
-Prim::getAvailabilitiesByLabels(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.AvailabilitiesByLabels.get
-Prim::getBlanks(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Blanks.get
-Prim::getBonusPoints(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.BonusPoints.get
-Prim::setBrands(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Brands.set
-Prim::getClientTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.ClientTypes.get
-Prim::setContacts(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Contacts.set
-Prim::getCurrencies(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Currencies.get
-Prim::getDeliveryTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.DeliveryTypes.get
-Prim::getDocInfo(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.DocInfo.get
-Prim::getFiles(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Files.get
-Prim::annulFinDocFinDoc(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.FinDoc.annulFinDoc
-Prim::setGroups(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Groups.set
-Prim::getInterationSystems(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.InterationSystems.get
-Prim::setInvoice(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Invoice.set
-Prim::setItems(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Items.set
-Prim::getListOperation(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.ListOperation.get
-Prim::setMeasures(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Measures.set
-Prim::getOperations(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Operations.get
-Prim::getParams(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Params.get
-Prim::setPartners(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Partners.set
-Prim::getPayTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.PayTypes.get
-Prim::fullAnnulPoPo(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Po.fullAnnulPo
-Prim::getPos(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Pos.get
-Prim::setPrices(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Prices.set
-Prim::getPricesLists(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.PricesLists.get
-Prim::setServices(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Services.set
-Prim::getSoInvoicePdfSo(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.So.getSoInvoicePdf
-Prim::getSoOrderTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.SoOrderTypes.get
-Prim::deleteStoreIn(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.StoreIn.delete
-Prim::deleteStoreOut(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.StoreOut.delete
-Prim::getStores(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.Stores.get
-Prim::getTaxDeals(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.TaxDeals.get
-Prim::getTaxInstances(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.TaxInstances.get
-Prim::getVendorTypes(PrimRequestInterface $request): array //Prim Endpoint: RPC.common.Api.VendorTypes.get
+/**
+* getAccounts
+*
+* Prim Endpoint: RPC.common.Api.Accounts.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getAccounts(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setAddresses
+*
+* Prim Endpoint: RPC.common.Api.Addresses.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setAddresses(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getExpenseAllocations
+*
+* Prim Endpoint: RPC.common.Api.Allocations.getExpense
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getExpenseAllocations(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getAvailabilities
+*
+* Prim Endpoint: RPC.common.Api.Availabilities.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getAvailabilities(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getAvailabilitiesByLabels
+*
+* Prim Endpoint: RPC.common.Api.AvailabilitiesByLabels.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getAvailabilitiesByLabels(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getBlanks
+*
+* Prim Endpoint: RPC.common.Api.Blanks.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getBlanks(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getBonusPoints
+*
+* Prim Endpoint: RPC.common.Api.BonusPoints.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getBonusPoints(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setBrands
+*
+* Prim Endpoint: RPC.common.Api.Brands.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setBrands(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getClientTypes
+*
+* Prim Endpoint: RPC.common.Api.ClientTypes.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getClientTypes(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setContacts
+*
+* Prim Endpoint: RPC.common.Api.Contacts.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setContacts(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getCurrencies
+*
+* Prim Endpoint: RPC.common.Api.Currencies.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getCurrencies(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getDeliveryTypes
+*
+* Prim Endpoint: RPC.common.Api.DeliveryTypes.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getDeliveryTypes(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getDocInfo
+*
+* Prim Endpoint: RPC.common.Api.DocInfo.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getDocInfo(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getFiles
+*
+* Prim Endpoint: RPC.common.Api.Files.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getFiles(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* annulFinDocFinDoc
+*
+* Prim Endpoint: RPC.common.Api.FinDoc.annulFinDoc
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::annulFinDocFinDoc(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setGroups
+*
+* Prim Endpoint: RPC.common.Api.Groups.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setGroups(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getInterationSystems
+*
+* Prim Endpoint: RPC.common.Api.InterationSystems.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getInterationSystems(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setInvoice
+*
+* Prim Endpoint: RPC.common.Api.Invoice.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setInvoice(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setItems
+*
+* Prim Endpoint: RPC.common.Api.Items.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setItems(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getListOperation
+*
+* Prim Endpoint: RPC.common.Api.ListOperation.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getListOperation(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setMeasures
+*
+* Prim Endpoint: RPC.common.Api.Measures.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setMeasures(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getOperations
+*
+* Prim Endpoint: RPC.common.Api.Operations.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getOperations(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getParams
+*
+* Prim Endpoint: RPC.common.Api.Params.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getParams(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setPartners
+*
+* Prim Endpoint: RPC.common.Api.Partners.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setPartners(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getPayTypes
+*
+* Prim Endpoint: RPC.common.Api.PayTypes.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getPayTypes(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* fullAnnulPoPo
+*
+* Prim Endpoint: RPC.common.Api.Po.fullAnnulPo
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::fullAnnulPoPo(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getPos
+*
+* Prim Endpoint: RPC.common.Api.Pos.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getPos(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setPrices
+*
+* Prim Endpoint: RPC.common.Api.Prices.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setPrices(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getPricesLists
+*
+* Prim Endpoint: RPC.common.Api.PricesLists.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getPricesLists(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* setServices
+*
+* Prim Endpoint: RPC.common.Api.Services.set
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::setServices(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getSoInvoicePdfSo
+*
+* Prim Endpoint: RPC.common.Api.So.getSoInvoicePdf
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getSoInvoicePdfSo(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getSoOrderTypes
+*
+* Prim Endpoint: RPC.common.Api.SoOrderTypes.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getSoOrderTypes(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* deleteStoreIn
+*
+* Prim Endpoint: RPC.common.Api.StoreIn.delete
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::deleteStoreIn(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* deleteStoreOut
+*
+* Prim Endpoint: RPC.common.Api.StoreOut.delete
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::deleteStoreOut(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getStores
+*
+* Prim Endpoint: RPC.common.Api.Stores.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getStores(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getTaxDeals
+*
+* Prim Endpoint: RPC.common.Api.TaxDeals.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getTaxDeals(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getTaxInstances
+*
+* Prim Endpoint: RPC.common.Api.TaxInstances.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getTaxInstances(PrimRequestInterface $request, $wantAll = false): array
+
+/**
+* getVendorTypes
+*
+* Prim Endpoint: RPC.common.Api.VendorTypes.get
+*
+*
+* @param \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+* @param boolean $wantAll
+* @return array
+*
+* @throws \Gdinko\Prim\Exceptions\PrimException
+* @throws \Gdinko\Prim\Exceptions\PrimValidationException
+*/
+Prim::getVendorTypes(PrimRequestInterface $request, $wantAll = false): array
+
 ```
 
 ### Commands
@@ -156,6 +688,7 @@ Implements PrimRequestInterface
 
 ```php
 PrimRequest
+PrimNoValidationRequest //no client site data validation
 ```
 
 ### Request Example
@@ -211,6 +744,7 @@ try {
 use Gdinko\Prim\Facades\Prim;
 use Gdinko\Prim\Exceptions\PrimException;
 use Gdinko\Prim\Exceptions\PrimValidationException;
+use Gdinko\Prim\Requests\PrimRequest;
 
 try {
     $accounts = Prim::getAccounts(
@@ -233,12 +767,44 @@ try {
 }
 ```
 
+### Get All Accounts with no client site validation request and get all prim response, not only result fields
+
+**This example usage is valid for all methods*
+```php
+use Gdinko\Prim\Facades\Prim;
+use Gdinko\Prim\Exceptions\PrimException;
+use Gdinko\Prim\Exceptions\PrimValidationException;
+use Gdinko\Prim\Requests\PrimNoValidationRequest;
+
+try {
+    $accounts = Prim::getAccounts(
+        new PrimNoValidationRequest(
+            [], //empty params, no client site validation only prim validation
+            true, //get all flag
+        ),
+        true
+    );
+
+    dd($accounts);
+} catch (PrimException $pe) {
+    echo class_basename($pe) . '<br />';
+    echo $pe->getCode() . '<br />';
+    echo $pe->getMessage() . '<br />';
+    dd($pe->getErrors());
+} catch (\Exception $e) {
+    echo class_basename($e) . '<br />';
+    echo $e->getCode() . '<br />';
+    echo $e->getMessage() . '<br />';
+}
+```
+
 ### Search for Accounts with autogenerated request validation rules  
 **This example usage is valid for all methods*
 ```php
 use Gdinko\Prim\Facades\Prim;
 use Gdinko\Prim\Exceptions\PrimException;
 use Gdinko\Prim\Exceptions\PrimValidationException;
+use Gdinko\Prim\Requests\PrimRequest;
 
 try {
     $accounts = Prim::getAccounts(

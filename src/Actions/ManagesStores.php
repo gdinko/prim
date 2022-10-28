@@ -10,15 +10,21 @@ trait ManagesStores
      * getStores
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
+     * @param  boolean $wantAll
      * @return array
-     *
+     * 
      * @throws \Gdinko\Prim\Exceptions\PrimException
+     * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-    public function getStores(PrimRequestInterface $request)
+
+    public function getStores(PrimRequestInterface $request, $wantAll = false)
     {
-        return $this->post(
+        $response = $this->post(
             "RPC.common.Api.Stores.get",
-            $request->getValidatedData()
-        )['result'];
+            $request->getValidatedData(),
+            $wantAll
+        );
+
+        return $wantAll ? $response : $response['result'] ?? [];
     }
 }
