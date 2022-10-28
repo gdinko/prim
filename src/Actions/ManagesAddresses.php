@@ -10,13 +10,12 @@ trait ManagesAddresses
      * getAddresses
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getAddresses(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -32,13 +31,12 @@ trait ManagesAddresses
      * setAddresses
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function setAddresses(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(

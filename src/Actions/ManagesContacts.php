@@ -10,13 +10,12 @@ trait ManagesContacts
      * getContacts
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getContacts(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -32,13 +31,12 @@ trait ManagesContacts
      * setContacts
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function setContacts(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(

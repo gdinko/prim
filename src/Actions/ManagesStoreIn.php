@@ -10,13 +10,12 @@ trait ManagesStoreIn
      * getStoreIn
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getStoreIn(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -32,13 +31,12 @@ trait ManagesStoreIn
      * setStoreIn
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function setStoreIn(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -54,13 +52,12 @@ trait ManagesStoreIn
      * annulStoreIn
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function annulStoreIn(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -76,13 +73,12 @@ trait ManagesStoreIn
      * deleteStoreIn
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function deleteStoreIn(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(

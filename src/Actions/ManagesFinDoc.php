@@ -10,13 +10,12 @@ trait ManagesFinDoc
      * getFinDoc
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getFinDoc(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -32,13 +31,12 @@ trait ManagesFinDoc
      * createIncomeFinDocFinDoc
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function createIncomeFinDocFinDoc(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -54,13 +52,12 @@ trait ManagesFinDoc
      * createExpenseFinDocFinDoc
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function createExpenseFinDocFinDoc(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -76,13 +73,12 @@ trait ManagesFinDoc
      * annulFinDocFinDoc
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function annulFinDocFinDoc(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(

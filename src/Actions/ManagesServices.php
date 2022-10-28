@@ -10,13 +10,12 @@ trait ManagesServices
      * getServices
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getServices(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -32,13 +31,12 @@ trait ManagesServices
      * setServices
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function setServices(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(

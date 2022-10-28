@@ -10,13 +10,12 @@ trait ManagesSo
      * getSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -32,13 +31,12 @@ trait ManagesSo
      * getOneDataSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getOneDataSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -54,13 +52,12 @@ trait ManagesSo
      * setSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function setSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -76,13 +73,12 @@ trait ManagesSo
      * createExpeditionSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function createExpeditionSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -98,13 +94,12 @@ trait ManagesSo
      * createStoreOutSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function createStoreOutSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -120,13 +115,12 @@ trait ManagesSo
      * createCreditSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function createCreditSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -142,13 +136,12 @@ trait ManagesSo
      * createFinDocSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function createFinDocSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -164,13 +157,12 @@ trait ManagesSo
      * annulSoSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function annulSoSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -186,13 +178,12 @@ trait ManagesSo
      * fullAnnulSoSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function fullAnnulSoSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
@@ -208,13 +199,12 @@ trait ManagesSo
      * getSoInvoicePdfSo
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getSoInvoicePdfSo(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(

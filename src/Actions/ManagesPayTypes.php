@@ -10,13 +10,12 @@ trait ManagesPayTypes
      * getPayTypes
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getPayTypes(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(

@@ -10,13 +10,12 @@ trait ManagesDeliveryTypes
      * getDeliveryTypes
      *
      * @param  \Gdinko\Prim\Interfaces\PrimRequestInterface $request
-     * @param  boolean $wantAll
+     * @param  bool $wantAll
      * @return array
-     * 
+     *
      * @throws \Gdinko\Prim\Exceptions\PrimException
      * @throws \Gdinko\Prim\Exceptions\PrimValidationException
      */
-
     public function getDeliveryTypes(PrimRequestInterface $request, $wantAll = false)
     {
         $response = $this->post(
