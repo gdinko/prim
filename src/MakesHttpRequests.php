@@ -128,7 +128,7 @@ trait MakesHttpRequests
     protected function addTokenToUrl($url)
     {
         $queryString = http_build_query([
-            'token' => $this->apiToken
+            'token' => $this->apiToken,
         ]);
 
         return $url . (parse_url($url, PHP_URL_QUERY) ? '&' : '?') . $queryString;
