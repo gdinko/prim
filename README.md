@@ -1,8 +1,8 @@
 # Laravel Prim API Wrapper
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gdinko/prim.svg?style=flat-square)](https://packagist.org/packages/gdinko/prim)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gdinko/prim/run-tests?label=tests)](https://github.com/gdinko/prim/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/gdinko/prim/Check%20&%20fix%20styling?label=code%20style)](https://github.com/gdinko/prim/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/gdinko/prim/run-tests.yml?label=tests)](https://github.com/gdinko/prim/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/gdinko/prim/php-cs-fixer.yml?label=code%20style)](https://github.com/gdinko/prim/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/gdinko/prim.svg?style=flat-square)](https://packagist.org/packages/gdinko/prim)
 
 [Prim JSON API Documentation](https://prim.bg)

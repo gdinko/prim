@@ -49,7 +49,7 @@ class PrimRequest implements PrimRequestInterface
 
         $this->validatedData = [
             'data' => [
-                $validator->validated() ?: new \stdClass(),
+                $validator->validated() ?: ($data ?: new \stdClass()),
             ],
             'get_all' => $getAll,
         ];

@@ -58,13 +58,14 @@ trait MakesHttpRequests
             'request' => $data,
         ];
 
-        $data['token'] = $this->apiToken;
+        //prim requires token in url
+        $urlWithToken = $this->addTokenToUrl($url);
 
         //make request
         $response = Http::acceptJson()
             ->timeout($this->timeout)
             ->baseUrl($this->baseUrl)
-            ->{$verb}($url, $data);
+            ->{$verb}($urlWithToken, $data);
 
         $responseData = $response->json();
 
@@ -116,5 +117,20 @@ trait MakesHttpRequests
             422,
             $responseData['data'] ?? $responseData
         );
+    }
+
+    /**
+     * addTokenToUrl
+     *
+     * @param string $url The URL to which the token should be added.
+     * @return string The modified URL with the token as a query parameter.
+     */
+    protected function addTokenToUrl($url)
+    {
+        $queryString = http_build_query([
+            'token' => $this->apiToken
+        ]);
+
+        return $url . (parse_url($url, PHP_URL_QUERY) ? '&' : '?') . $queryString;
     }
 }
