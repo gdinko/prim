@@ -696,7 +696,8 @@ PrimNoValidationRequest //no client site data validation
 $pr = new PrimRequest(
     ['code' => 'Code', 'name' => 'Name'],  //request data
     false, //get all | true / false
-    Prim::getValidationRules('RPC.common.Api.Accounts', 'get') // auto generate validation rules | or skip this param | or pass custom validation rules
+    Prim::getValidationRules('RPC.common.Api.Accounts', 'get'), // auto generate validation rules | or skip this param | or pass custom validation rules
+    true, //by default data will be wrapped in additional [] | true / false
 )
 ```
 

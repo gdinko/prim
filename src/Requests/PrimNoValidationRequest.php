@@ -18,14 +18,16 @@ class PrimNoValidationRequest implements PrimRequestInterface
      *
      * @param  array $data
      * @param  bool $getAll
+     * @param  bool $wrap
      * @return void
      */
-    public function __construct(array $data = [], $getAll = false)
+    public function __construct(array $data = [], $getAll = false, $wrap = true)
     {
         $this->validatedData = [
-            'data' => [
+            'data' => $this->wrap(
                 $data ?: new \stdClass(),
-            ],
+                $wrap
+            ),
             'get_all' => $getAll,
         ];
     }
@@ -48,5 +50,26 @@ class PrimNoValidationRequest implements PrimRequestInterface
     public function getValidatedData(): array
     {
         return $this->validatedData;
+    }
+
+    /**
+     * wrap
+     *
+     * @param  mixed $data
+     * @param  bool $wrap
+     * 
+     * @return array
+     */
+    protected function wrap($data, $wrap): array
+    {
+        if ($wrap && is_array($data)) {
+            return [$data];
+        }
+
+        if ($data instanceof \stdClass) {
+            return [$data];
+        }
+
+        return $data;
     }
 }
