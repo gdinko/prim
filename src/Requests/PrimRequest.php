@@ -86,7 +86,7 @@ class PrimRequest implements PrimRequestInterface
      *
      * @param  mixed $data
      * @param  bool $wrap
-     * 
+     *
      * @return array
      */
     protected function wrap($data, $wrap): array
