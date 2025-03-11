@@ -26,11 +26,10 @@ class PrimCustomRequest implements PrimRequestInterface
      * __construct
      *
      * @param  array $data
-     * @param  bool $getAll
      * @param  array $validationRules
      * @return void
      */
-    public function __construct(array $data = [], $getAll = false, array $validationRules = [])
+    public function __construct(array $data = [], array $validationRules = [])
     {
         $this->validationRules = $validationRules;
 
