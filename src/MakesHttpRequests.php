@@ -61,6 +61,11 @@ trait MakesHttpRequests
         //prim requires token in url
         $urlWithToken = $this->addTokenToUrl($url);
 
+        //if GET method add token to $data, because is stripped from url by HTTP
+        if ($verb == 'get') {
+            $data['token'] = $this->apiToken;
+        }
+
         //make request
         $response = Http::acceptJson()
             ->timeout($this->timeout)

@@ -84,6 +84,9 @@ Prim::getMethodParams($method, $verb): array
 //auto generate validation rules for API method
 Prim::getValidationRules($method, $verb): array
 
+//make call to custom METHOD
+Prim::public function customMethod(string $methodName, PrimRequestInterface $request, string $verb = 'post', $wantAll = false)
+
 /**
 * getAccounts
 *
@@ -689,6 +692,7 @@ Implements PrimRequestInterface
 ```php
 PrimRequest
 PrimNoValidationRequest //no client site data validation
+PrimCustomRequest //used for GET request, with no data wrapping
 ```
 
 ### Request Example

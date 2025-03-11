@@ -9,6 +9,7 @@ class Prim
     use Actions\ManagesAddresses;
     use Actions\ManagesAllocations;
     use Actions\ManagesApiCommon;
+    use Actions\ManagesApiCustom;
     use Actions\ManagesAvailabilities;
     use Actions\ManagesAvailabilitiesByLabels;
     use Actions\ManagesBlanks;
