@@ -26,7 +26,6 @@ class PrimSetRequest implements PrimRequestInterface
      * __construct
      *
      * @param  array $data
-     * @param  bool $getAll
      * @param  array $validationRules
      * @param  bool $wrap
      * @return void
